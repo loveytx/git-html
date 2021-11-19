@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header style="background-color: aqua;color: blueviolet;text-decoration: blink;">
+    hello, this is lovepreet and here i'm presenting you my website and i'm just starting out and it's a new website </header>
+    <main>
+        <section style="font-family: Verdana; font-size : 150%; text-align : center;">this is section area of my site and i don't know what i should say </section>  
+        <span style="color: blue;"> Do not forget to buy <mark>milk</mark> today</span>  <!--this will highlight the word (milk), Also <b>, <strong>, <i>, <span>, <u> and <s> are inline level elements hence they will take the amount of space they needed only and do not waste like <p> <div> <h1> < h2> <address> etc which are block level elements-->
+        <div>
+            <h1>hello guys </h1>
+            <span style="color: blueviolet; background: antiquewhite;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloremque quos voluptatibus mollitia fuga dolore fugit corporis nihil, eveniet perferendis maxime, id rem quaerat, magni enim dolorum nostrum neque porro!</span>
+        </div>
+		
+		<img height = 200px src="img/college_id.jpeg" alt="not available"> <!--for going into img folder and get the image we use this "folder_name/anotherfolder_name(if available)then image_name"-->
+    </main>
+    
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

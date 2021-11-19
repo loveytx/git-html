@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action="form.php">
+            <input type="text" placeholder="Enter your name">
+
+            <label for="sectionidA">
+            <input type="radio" value="section a" name="section" id="sectionidA">SECTION A
+           </label>  &nbsp;<!-- here value attribute is used to set the value of <input> elements: it defines the value associated with the input and the value in the name/value pair that is sent to the server on form submission. Also  &nbsp; is used to add spaces -->
+           
+           <label for="sectionidB"> 
+               <input type="radio" value="section b" name="section" id="sectionidB">SECTION B
+            </label>  &nbsp; <!--if we give diff name  then we can select both radio , by giving same name (section in this case) if we click on one radio then other will automatically get deselect. Also since we r using for hence we even if we click on SECTION B ,then radio button filled but if we change for then it doesn't happen-->
+            
+           <label for="sectionidC">
+           <input type="radio" value="section c" name="section" id="sectionidC">SECTION C
+           </label><br><br>
+
+           <label for="food"> 
+               <input type="checkbox" value="foodie" name="food" id="food">Want a food canteen??
+           </label><br><br>
+
+           <label for="dateforsubmissiom">
+              Enter the submission date <input type="date" name="dataforsubmission" id="dateforsubmissiom">
+           </label><br><br><br>
+
+           <textarea name="explain" id="explain" cols="30" rows="10" placeholder="Explain why you want food canteen"></textarea><br><br>
+           
+           <select name="Fav place" id="Fav place">
+               <option value="shimla">Select your fav place</option>
+               <option value="delhi">Delhi</option>
+               <option value="mumbai">Mumbai</option>
+               <option value="assam">Assam</option>
+            </select><br>
+            
+            
+           <div class="submission">
+           <input type="submit" value="SUBMIT"> </div><br>
+
+        </form>
+    </div>
+</body>
+</html>
